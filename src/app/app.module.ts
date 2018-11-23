@@ -9,6 +9,7 @@ import {GraphQLModule} from './apollo.config';
 import { LinkItemComponent } from './link-item/link-item.component';
 import { LinkListComponent } from './link-list/link-list.component';
 import { CreateLinkComponent } from './create-link/create-link.component';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CreateLinkComponent } from './create-link/create-link.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    GraphQLModule
+    GraphQLModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
